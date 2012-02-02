@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: BranchAndBound</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/BranchAndBound_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/BranchAndBound.rb">lib/BranchAndBound.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-disableDebug">#disableDebug</a></li>
+					
+					<li><a href="#method-i-enableDebug">#enableDebug</a></li>
+					
+					<li><a href="#method-i-solve">#solve</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./bin/vstup_txt.html">vstup.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./BranchAndBound.html">BranchAndBound</a></li>
+				
+					<li><a href="./Kingdom.html">Kingdom</a></li>
+				
+					<li><a href="./PriorityQueue.html">PriorityQueue</a></li>
+				
+					<li><a href="./TestovaciObjekt.html">TestovaciObjekt</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">BranchAndBound</h1>
+
+		<div id="description">
+			<p>
+Reprezentace systémového prohledávání s prořezávání a výběrem
+best first
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(startState)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Inicializace prohledávání, přijímá počáteční stav
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/BranchAndBound.rb, line 7</span>
+ 7:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">startState</span>)
+ 8:     <span class="ruby-ivar">@fronta</span> = <span class="ruby-constant">PriorityQueue</span>.<span class="ruby-identifier">new</span>
+ 9:     <span class="ruby-ivar">@fronta</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">startState</span>)
+10:     <span class="ruby-ivar">@bestState</span> = <span class="ruby-keyword kw">nil</span>
+11:     <span class="ruby-ivar">@navstiveno</span> = <span class="ruby-value">0</span>
+12:     <span class="ruby-ivar">@debug</span> = <span class="ruby-keyword kw">false</span>
+13:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="disable-ebug-method" class="method-detail ">
+				<a name="method-i-disableDebug"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">disableDebug</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Vypnutí výpisu rozšířených informací o běhu prohledávání
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="disable-ebug-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/BranchAndBound.rb, line 21</span>
+21:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">disableDebug</span>
+22:     <span class="ruby-ivar">@debug</span> = <span class="ruby-keyword kw">false</span>
+23:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="enable-ebug-method" class="method-detail ">
+				<a name="method-i-enableDebug"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">enableDebug</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Zapnutí výpisu rozšířených informací o běhu prohledávání
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="enable-ebug-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/BranchAndBound.rb, line 16</span>
+16:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">enableDebug</span>
+17:     <span class="ruby-ivar">@debug</span> = <span class="ruby-keyword kw">true</span>
+18:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="solve-method" class="method-detail ">
+				<a name="method-i-solve"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">solve</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Výkoný kód samotného prohledávání
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="solve-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/BranchAndBound.rb, line 26</span>
+26:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">solve</span>
+27:     <span class="ruby-keyword kw">while</span> <span class="ruby-operator">!</span>(<span class="ruby-ivar">@fronta</span>.<span class="ruby-identifier">empty?</span>)
+28:       <span class="ruby-identifier">stav</span> = <span class="ruby-ivar">@fronta</span>.<span class="ruby-identifier">pop</span>
+29:       <span class="ruby-comment cmt">#stav.displayConnections</span>
+30:       <span class="ruby-ivar">@navstiveno</span> = <span class="ruby-ivar">@navstiveno</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+31:       <span class="ruby-comment cmt">#@fronta.displayContent</span>
+32:       <span class="ruby-comment cmt">#stav.displayConnections</span>
+33:       <span class="ruby-comment cmt">#puts &quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;</span>
+34:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">stav</span>.<span class="ruby-identifier">solution?</span>
+35:         <span class="ruby-keyword kw">if</span>(<span class="ruby-ivar">@bestState</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>)
+36:           <span class="ruby-ivar">@bestState</span> = <span class="ruby-identifier">stav</span>
+37:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@debug</span>
+38:             <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;</span>
+39:             <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Novy nejlepsi stav&quot;</span>
+40:             <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;Pocet silnic k dostaveni: &quot;</span>
+41:             <span class="ruby-identifier">print</span> <span class="ruby-ivar">@bestState</span>.<span class="ruby-identifier">optCriterium</span>
+42:             <span class="ruby-identifier">puts</span>
+43:             <span class="ruby-ivar">@bestState</span>.<span class="ruby-identifier">displayConnections</span>
+44:           <span class="ruby-keyword kw">end</span>
+45:         <span class="ruby-keyword kw">else</span>
+46:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">stav</span>.<span class="ruby-identifier">optCriterium</span> <span class="ruby-operator">&lt;</span> <span class="ruby-ivar">@bestState</span>.<span class="ruby-identifier">optCriterium</span>
+47:             <span class="ruby-ivar">@bestState</span> = <span class="ruby-identifier">stav</span>
+48:             <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@debug</span>
+49:               <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;</span>
+50:               <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Novy nejlepsi stav&quot;</span>
+51:               <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;Pocet silnic k dostaveni: &quot;</span>
+52:               <span class="ruby-identifier">print</span> <span class="ruby-ivar">@bestState</span>.<span class="ruby-identifier">optCriterium</span>
+53:               <span class="ruby-identifier">puts</span>
+54:               <span class="ruby-ivar">@bestState</span>.<span class="ruby-identifier">displayConnections</span>
+55:             <span class="ruby-keyword kw">end</span>
+56:           <span class="ruby-keyword kw">end</span>
+57:         <span class="ruby-keyword kw">end</span>
+58: 
+59:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@bestState</span>.<span class="ruby-identifier">roadCount</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@bestState</span>.<span class="ruby-identifier">cityCount</span>
+60:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@debug</span>
+61:             <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Konec vypoctu - lepsi reseni nemuze existovat&quot;</span>
+62:           <span class="ruby-keyword kw">end</span>
+63:           <span class="ruby-keyword kw">break</span>
+64:         <span class="ruby-keyword kw">end</span>
+65:       <span class="ruby-keyword kw">end</span>
+66: 
+67:       <span class="ruby-identifier">muzeBytLepsi</span> = <span class="ruby-keyword kw">false</span>
+68:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@bestState</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>
+69:         <span class="ruby-identifier">muzeBytLepsi</span> = <span class="ruby-keyword kw">true</span>
+70:       <span class="ruby-keyword kw">else</span>
+71:         <span class="ruby-keyword kw">if</span> (<span class="ruby-identifier">stav</span>.<span class="ruby-identifier">optCriterium</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>) <span class="ruby-operator">&gt;=</span> <span class="ruby-ivar">@bestState</span>.<span class="ruby-identifier">optCriterium</span>
+72:           <span class="ruby-identifier">muzeBytLepsi</span> = <span class="ruby-keyword kw">false</span>
+73:         <span class="ruby-keyword kw">else</span>
+74:           <span class="ruby-identifier">muzeBytLepsi</span> = <span class="ruby-keyword kw">true</span>
+75:         <span class="ruby-keyword kw">end</span>
+76:       <span class="ruby-keyword kw">end</span>
+77: 
+78:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">muzeBytLepsi</span>
+79:         <span class="ruby-identifier">pole</span> = <span class="ruby-identifier">stav</span>.<span class="ruby-identifier">getOtherStates</span>
+80:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">pole</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword kw">nil</span>
+81:           <span class="ruby-ivar">@fronta</span>.<span class="ruby-identifier">pushArray</span>(<span class="ruby-identifier">pole</span>)
+82:         <span class="ruby-keyword kw">end</span>
+83:       <span class="ruby-keyword kw">end</span>
+84: 
+85:     <span class="ruby-keyword kw">end</span>
+86:     <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@debug</span>
+87:       <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;Behem vypoctu bylo navstiveno &quot;</span>
+88:       <span class="ruby-identifier">print</span> <span class="ruby-ivar">@navstiveno</span>
+89:       <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot; stavu.&quot;</span>
+90:       <span class="ruby-identifier">puts</span>
+91:     <span class="ruby-keyword kw">end</span>
+92:     <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@bestState</span>
+93:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

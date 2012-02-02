@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Kingdom</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/Kingdom_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/Kingdom.rb">lib/Kingdom.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-addNewConnection">#addNewConnection</a></li>
+					
+					<li><a href="#method-i-clone">#clone</a></li>
+					
+					<li><a href="#method-i-displayConnections">#displayConnections</a></li>
+					
+					<li><a href="#method-i-evaluateConnections">#evaluateConnections</a></li>
+					
+					<li><a href="#method-i-getOtherStates">#getOtherStates</a></li>
+					
+					<li><a href="#method-i-loadFromFile">#loadFromFile</a></li>
+					
+					<li><a href="#method-i-loadFromUser">#loadFromUser</a></li>
+					
+					<li><a href="#method-i-printResult">#printResult</a></li>
+					
+					<li><a href="#method-i-solution%3F">#solution?</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./bin/vstup_txt.html">vstup.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./BranchAndBound.html">BranchAndBound</a></li>
+				
+					<li><a href="./Kingdom.html">Kingdom</a></li>
+				
+					<li><a href="./PriorityQueue.html">PriorityQueue</a></li>
+				
+					<li><a href="./TestovaciObjekt.html">TestovaciObjekt</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Kingdom</h1>
+
+		<div id="description">
+			<p>
+Třída reprezentující silniční síť celého království
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="opt-riterium-attribute-method" class="method-detail">
+				<a name="optCriterium"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">optCriterium</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="cost-attribute-method" class="method-detail">
+				<a name="cost"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">cost</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="city-ount-attribute-method" class="method-detail">
+				<a name="cityCount"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">cityCount</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="road-ount-attribute-method" class="method-detail">
+				<a name="roadCount"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">roadCount</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(cityCount=0, roads=[], i=0, j=0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Kingdom.rb, line 9</span>
+ 9:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">cityCount</span>=<span class="ruby-value">0</span>, <span class="ruby-identifier">roads</span>=[], <span class="ruby-identifier">i</span>=<span class="ruby-value">0</span>, <span class="ruby-identifier">j</span>=<span class="ruby-value">0</span>)
+10:     <span class="ruby-ivar">@cityCount</span> = <span class="ruby-identifier">cityCount</span>
+11:     <span class="ruby-ivar">@roads</span> = []
+12:     <span class="ruby-ivar">@optCriterium</span> = <span class="ruby-constant">Infinity</span>
+13:     <span class="ruby-ivar">@roadCount</span> = <span class="ruby-constant">Infinity</span>
+14:     <span class="ruby-ivar">@cost</span> = <span class="ruby-value">0</span>
+15:     <span class="ruby-ivar">@i</span> = <span class="ruby-identifier">i</span>
+16:     <span class="ruby-ivar">@j</span> = <span class="ruby-identifier">j</span>
+17: 
+18:     <span class="ruby-identifier">roads</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">tmp</span><span class="ruby-operator">|</span>
+19:       <span class="ruby-identifier">nova</span> = []
+20:       <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">polozka</span><span class="ruby-operator">|</span>
+21:         <span class="ruby-identifier">nova</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">polozka</span>
+22:       }
+23:       <span class="ruby-ivar">@roads</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">nova</span>
+24:     }
+25:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="add-ew-onnection-method" class="method-detail ">
+				<a name="method-i-addNewConnection"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">addNewConnection</span><span
+						class="method-args">(start, cil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Přidání nové silnice
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="add-ew-onnection-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Kingdom.rb, line 265</span>
+265:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">addNewConnection</span>(<span class="ruby-identifier">start</span>, <span class="ruby-identifier">cil</span>)
+266:     <span class="ruby-ivar">@roads</span>[<span class="ruby-identifier">start</span>][<span class="ruby-identifier">cil</span>] = <span class="ruby-value">:newConnection</span>
+267:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="clone-method" class="method-detail ">
+				<a name="method-i-clone"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">clone</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Tvorba hluboké kopie
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="clone-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Kingdom.rb, line 28</span>
+28:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">clone</span>
+29:     <span class="ruby-constant">Kingdom</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@cityCount</span>, <span class="ruby-ivar">@roads</span>, <span class="ruby-ivar">@i</span>, <span class="ruby-ivar">@j</span>)
+30:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="display-onnections-method" class="method-detail ">
+				<a name="method-i-displayConnections"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">displayConnections</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Vykreslení matice sousednosti
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="display-onnections-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Kingdom.rb, line 189</span>
+189:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">displayConnections</span>
+190:     <span class="ruby-identifier">i</span> = <span class="ruby-value">1</span>
+191:     <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;  &quot;</span>
+192:     <span class="ruby-ivar">@cityCount</span>.<span class="ruby-identifier">times</span> {
+193:       <span class="ruby-identifier">print</span> <span class="ruby-identifier">i</span>
+194:       <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot; &quot;</span>
+195:       <span class="ruby-identifier">i</span> = <span class="ruby-identifier">i</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+196:     }
+197:     <span class="ruby-identifier">puts</span>
+198: 
+199:     <span class="ruby-identifier">i</span> = <span class="ruby-value">1</span>
+200:     <span class="ruby-ivar">@roads</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">tmp</span><span class="ruby-operator">|</span>
+201:       <span class="ruby-identifier">print</span> <span class="ruby-identifier">i</span>
+202:       <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot; &quot;</span>
+203:       <span class="ruby-identifier">i</span> = <span class="ruby-identifier">i</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+204:       <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">spojeni</span><span class="ruby-operator">|</span>
+205: 
+206:         <span class="ruby-keyword kw">if</span> (<span class="ruby-identifier">spojeni</span> <span class="ruby-operator">==</span> <span class="ruby-value">:directConnection</span>)
+207:           <span class="ruby-identifier">print</span>(<span class="ruby-value str">&quot;D&quot;</span>)
+208:         <span class="ruby-keyword kw">end</span>
+209:         <span class="ruby-keyword kw">if</span> (<span class="ruby-identifier">spojeni</span> <span class="ruby-operator">==</span> <span class="ruby-value">:noConnection</span>)
+210:           <span class="ruby-identifier">print</span>(<span class="ruby-value str">&quot; &quot;</span>)
+211:         <span class="ruby-keyword kw">end</span>
+212:         <span class="ruby-keyword kw">if</span> (<span class="ruby-identifier">spojeni</span> <span class="ruby-operator">==</span> <span class="ruby-value">:indirectConnection</span>)
+213:           <span class="ruby-identifier">print</span>(<span class="ruby-value str">&quot;I&quot;</span>)
+214:         <span class="ruby-keyword kw">end</span>
+215:         <span class="ruby-keyword kw">if</span> (<span class="ruby-identifier">spojeni</span> <span class="ruby-operator">==</span> <span class="ruby-value">:newConnection</span>)
+216:           <span class="ruby-identifier">print</span>(<span class="ruby-value str">&quot;A&quot;</span>)
+217:         <span class="ruby-keyword kw">end</span>
+218:         <span class="ruby-keyword kw">if</span> (<span class="ruby-identifier">spojeni</span> <span class="ruby-operator">==</span> <span class="ruby-value">:selfConnection</span>)
+219:           <span class="ruby-identifier">print</span>(<span class="ruby-value str">&quot;X&quot;</span>)
+220:         <span class="ruby-keyword kw">end</span>
+221:         <span class="ruby-identifier">print</span>(<span class="ruby-value str">&quot; &quot;</span>)
+222:       }
+223:       <span class="ruby-identifier">puts</span>
+224:     }
+225:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="evaluate-onnections-method" class="method-detail ">
+				<a name="method-i-evaluateConnections"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">evaluateConnections</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Vyhodnocení možných cest mezi všemi městy
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="evaluate-onnections-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Kingdom.rb, line 228</span>
+228:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">evaluateConnections</span>
+229:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@cityCount</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+230:       <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@cityCount</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+231:         <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@cityCount</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+232:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@roads</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] <span class="ruby-operator">==</span> <span class="ruby-value">:noConnection</span>
+233:             <span class="ruby-keyword kw">if</span> (<span class="ruby-ivar">@roads</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>] <span class="ruby-operator">!=</span> <span class="ruby-value">:noConnection</span>) <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-ivar">@roads</span>[<span class="ruby-identifier">k</span>][<span class="ruby-identifier">j</span>] <span class="ruby-operator">!=</span> <span class="ruby-value">:noConnection</span>)
+234:               <span class="ruby-ivar">@roads</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-value">:indirectConnection</span>
+235:             <span class="ruby-keyword kw">end</span>
+236:           <span class="ruby-keyword kw">end</span>
+237:         <span class="ruby-keyword kw">end</span>
+238:       <span class="ruby-keyword kw">end</span>
+239:     <span class="ruby-keyword kw">end</span>
+240: 
+241: 
+242:     <span class="ruby-ivar">@cost</span> = <span class="ruby-value">0</span>
+243:     <span class="ruby-identifier">pridano</span> = <span class="ruby-value">0</span>
+244:     <span class="ruby-ivar">@roadCount</span> = <span class="ruby-value">0</span>
+245:     <span class="ruby-ivar">@roads</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">tmp</span><span class="ruby-operator">|</span>
+246:       <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">spojeni</span><span class="ruby-operator">|</span>
+247:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">spojeni</span> <span class="ruby-operator">!=</span> <span class="ruby-value">:noConnection</span>
+248:           <span class="ruby-ivar">@cost</span> = <span class="ruby-ivar">@cost</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+249:         <span class="ruby-keyword kw">end</span>
+250:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">spojeni</span> <span class="ruby-operator">==</span> <span class="ruby-value">:newConnection</span>
+251:           <span class="ruby-identifier">pridano</span> = <span class="ruby-identifier">pridano</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+252:         <span class="ruby-keyword kw">end</span>
+253:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">spojeni</span> <span class="ruby-operator">==</span> <span class="ruby-value">:directConnection</span>
+254:           <span class="ruby-ivar">@roadCount</span> = <span class="ruby-ivar">@roadCount</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+255:         <span class="ruby-keyword kw">end</span>
+256:       }
+257:     }
+258: 
+259:     <span class="ruby-ivar">@optCriterium</span> = <span class="ruby-identifier">pridano</span>
+260:     <span class="ruby-ivar">@roadCount</span> = <span class="ruby-ivar">@roadCount</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@optCriterium</span>
+261: 
+262:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-ther-tates-method" class="method-detail ">
+				<a name="method-i-getOtherStates"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">getOtherStates</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Získání dalších stavů pro prohledávání
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-ther-tates-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Kingdom.rb, line 270</span>
+270:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">getOtherStates</span>
+271:     <span class="ruby-identifier">result</span> = []
+272:     <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@i</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-ivar">@cityCount</span>
+273:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span>
+274:     <span class="ruby-keyword kw">end</span>
+275: 
+276:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-ivar">@i</span><span class="ruby-operator">..</span><span class="ruby-ivar">@cityCount</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+277:       <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-ivar">@j</span><span class="ruby-operator">..</span><span class="ruby-ivar">@cityCount</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+278:         <span class="ruby-comment cmt">#print i</span>
+279:         <span class="ruby-comment cmt">#print &quot; &quot;</span>
+280:         <span class="ruby-comment cmt">#print j</span>
+281:         <span class="ruby-comment cmt">#puts</span>
+282:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@roads</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] <span class="ruby-operator">==</span> <span class="ruby-value">:noConnection</span>
+283:           <span class="ruby-ivar">@i</span> = <span class="ruby-identifier">i</span>
+284:           <span class="ruby-ivar">@j</span> = <span class="ruby-identifier">j</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+285:           <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@j</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@cityCount</span>
+286:             <span class="ruby-ivar">@j</span> = <span class="ruby-value">0</span>
+287:             <span class="ruby-ivar">@i</span> = <span class="ruby-ivar">@i</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+288:           <span class="ruby-keyword kw">end</span>
+289:           <span class="ruby-identifier">novy</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">clone</span>
+290:           <span class="ruby-identifier">novy</span>.<span class="ruby-identifier">addNewConnection</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span>)
+291:           <span class="ruby-identifier">novy</span>.<span class="ruby-identifier">evaluateConnections</span>
+292:           <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword kw">self</span>
+293:           <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">novy</span>
+294:           <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">result</span>
+295:         <span class="ruby-keyword kw">end</span>
+296:       <span class="ruby-keyword kw">end</span>
+297:       <span class="ruby-ivar">@j</span> = <span class="ruby-value">0</span>
+298:     <span class="ruby-keyword kw">end</span>
+299:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span>
+300:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-rom-ile-method" class="method-detail ">
+				<a name="method-i-loadFromFile"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">loadFromFile</span><span
+						class="method-args">(filename)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Načtení silniční sítě ze souboru
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="load-rom-ile-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/Kingdom.rb, line 33</span>
+33:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">loadFromFile</span>(<span class="ruby-identifier">filename</span>)
+34:     <span class="ruby-keyword kw">begin</span>
+35:       <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">filename</span>, <span class="ruby-value str">&quot;r&quot;</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span>
+36:         <span class="ruby-identifier">radka</span> = <span class="ruby-value">0</span>
+37:         <span class="ruby-identifier">roadCount</span> = <span class="ruby-value">0</span>
+38:         <span class="ruby-identifier">f</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">line</span><span class="ruby-operator">|</span>
+39:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">radka</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+40:             <span class="ruby-ivar">@cityCount</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">line</span>)
+41:             <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@cityCount</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value">0</span>
+42:               <span class="ruby-identifier">raise</span>
+43:             <span class="ruby-keyword kw">end</span>
+44:             <span class="ruby-ivar">@cityCount</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+45:               <span class="ruby-ivar">@roads</span> <span class="ruby-operator">&lt;&lt;</span> []
+46:               <span class="ruby-ivar">@cityCount</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+47:                 <span class="ruby-ivar">@roads</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-value">:noConnection</span>
+48:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">j</span>
+49:                   <span class="ruby-ivar">@roads</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-value">:selfConnection</span>
+50:                 <span class="ruby-keyword kw">end</span>
+51:               <span class="ruby-keyword kw">end</span>
+52:             <span class="ruby-keyword kw">end</span>
+53:           <span class="ruby-keyword kw">end</span>
+54: 
+55:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">radka</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+56:             <span class="ruby-identifier">cesta</span> = []
+57:             <span class="ruby-identifier">cesta</span> = <span class="ruby-identifier">line</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">' '</span>)
+58:             <span class="ruby-identifier">start</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">cesta</span>[<span class="ruby-value">0</span>])<span class="ruby-operator">-</span><span class="ruby-value">1</span>
+59:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">start</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>
+60:               <span class="ruby-identifier">raise</span>
+61:             <span class="ruby-keyword kw">end</span>
+62:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">start</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-ivar">@cityCount</span>
+63:               <span class="ruby-identifier">raise</span>
+64:             <span class="ruby-keyword kw">end</span>
+65:             <span class="ruby-identifier">cil</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">cesta</span>[<span class="ruby-value">1</span>])<span class="ruby-operator">-</span><span class="ruby-value">1</span>
+66:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">cil</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>
+67:               <span class="ruby-identifier">raise</span>
+68:             <span class="ruby-keyword kw">end</span>
+69: 
+70:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">cil</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-ivar">@cityCount</span>
+71:               <span class="ruby-identifier">raise</span>
+72:             <span class="ruby-keyword kw">end</span>
+73: 
+74:             <span class="ruby-comment cmt">#p cesta</span>
+75:             <span class="ruby-ivar">@roads</span>[<span class="ruby-identifier">start</span>][<span class="ruby-identifier">cil</span>] = <span class="ruby-value">:directConnection</span>
+76:           <span class="ruby-keyword kw">end</span>
+77: 
+78:           <span class="ruby-identifier">radka</span> = <span class="ruby-identifier">radka</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+79: 
+80:         }
+81:       }
+82:       <span class="ruby-identifier">evaluateConnections</span>
+83:     <span class="ruby-keyword kw">rescue</span>
+84:       <span class="ruby-identifier">raise</span> <span class="ruby-value str">&quot;Neplatny format souboru&quot;</span>
+85:     <span class="ruby-keyword kw">end</span>
+86: 
+87:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-rom-ser-method" class="method-detail ">
+				<a name="method-i-loadFromUser"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">loadFromUser</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Zadání silniční sítě uživatelem do konzole
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="load-rom-ser-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Kingdom.rb, line 90</span>
+ 90:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">loadFromUser</span>
+ 91:     <span class="ruby-identifier">loop</span> <span class="ruby-keyword kw">do</span>
+ 92:       <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;Zadejte prosim pocet mest: &quot;</span>
+ 93:       <span class="ruby-keyword kw">begin</span>
+ 94:         <span class="ruby-identifier">mest</span> = <span class="ruby-identifier">gets</span>
+ 95:         <span class="ruby-ivar">@cityCount</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">mest</span>)
+ 96:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@cityCount</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value">0</span>
+ 97:           <span class="ruby-identifier">raise</span>
+ 98:         <span class="ruby-keyword kw">end</span>
+ 99: 
+100:         <span class="ruby-ivar">@cityCount</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+101:           <span class="ruby-ivar">@roads</span> <span class="ruby-operator">&lt;&lt;</span> []
+102:           <span class="ruby-ivar">@cityCount</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+103:             <span class="ruby-ivar">@roads</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-value">:noConnection</span>
+104:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">j</span>
+105:               <span class="ruby-ivar">@roads</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-value">:selfConnection</span>
+106:             <span class="ruby-keyword kw">end</span>
+107:           <span class="ruby-keyword kw">end</span>
+108:         <span class="ruby-keyword kw">end</span>
+109: 
+110: 
+111:         <span class="ruby-keyword kw">break</span>
+112:       <span class="ruby-keyword kw">rescue</span>
+113:         <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Neplatny vstup, opakujte prosim zadani&quot;</span>
+114:       <span class="ruby-keyword kw">end</span>
+115:     <span class="ruby-keyword kw">end</span>
+116: 
+117:     <span class="ruby-identifier">pocetSilnic</span> = <span class="ruby-value">0</span>
+118: 
+119:     <span class="ruby-identifier">loop</span> <span class="ruby-keyword kw">do</span>
+120:       <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;Zadejte prosim pocet existujicich silnic: &quot;</span>
+121:       <span class="ruby-keyword kw">begin</span>
+122:         <span class="ruby-identifier">silnic</span> = <span class="ruby-identifier">gets</span>
+123:         <span class="ruby-identifier">pocetSilnic</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">silnic</span>)
+124:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">pocetSilnic</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>
+125:           <span class="ruby-identifier">raise</span>
+126:         <span class="ruby-keyword kw">end</span>
+127:         <span class="ruby-keyword kw">break</span>
+128:       <span class="ruby-keyword kw">rescue</span>
+129:         <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Neplatny vstup, opakujte prosim zadani&quot;</span>
+130:       <span class="ruby-keyword kw">end</span>
+131:     <span class="ruby-keyword kw">end</span>
+132: 
+133:     <span class="ruby-identifier">pocetSilnic</span>.<span class="ruby-identifier">times</span> {
+134:       <span class="ruby-identifier">start</span> = <span class="ruby-value">0</span>
+135:       <span class="ruby-identifier">cil</span> = <span class="ruby-value">0</span>
+136: 
+137:       <span class="ruby-identifier">loop</span> <span class="ruby-keyword kw">do</span>
+138:         <span class="ruby-keyword kw">begin</span>
+139:           <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;Zadejte prosim mesto, kde silnice zacina (1-&quot;</span>
+140:           <span class="ruby-identifier">print</span> <span class="ruby-ivar">@cityCount</span>
+141:           <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;): &quot;</span>
+142: 
+143:           <span class="ruby-identifier">pocatek</span> = <span class="ruby-identifier">gets</span>
+144:           <span class="ruby-identifier">start</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">pocatek</span>)
+145:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">start</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">1</span>
+146:             <span class="ruby-identifier">raise</span>
+147:           <span class="ruby-keyword kw">end</span>
+148: 
+149:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">start</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@cityCount</span>
+150:             <span class="ruby-identifier">raise</span>
+151:           <span class="ruby-keyword kw">end</span>
+152: 
+153:           <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;Zadejte prosim mesto, kde silnice konci (1-&quot;</span>
+154:           <span class="ruby-identifier">print</span> <span class="ruby-ivar">@cityCount</span>
+155:           <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;): &quot;</span>
+156: 
+157:           <span class="ruby-identifier">konec</span> = <span class="ruby-identifier">gets</span>
+158:           <span class="ruby-identifier">cil</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">konec</span>)
+159:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">cil</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">1</span>
+160:             <span class="ruby-identifier">raise</span>
+161:           <span class="ruby-keyword kw">end</span>
+162: 
+163:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">cil</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@cityCount</span>
+164:             <span class="ruby-identifier">raise</span>
+165:           <span class="ruby-keyword kw">end</span>
+166: 
+167:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">start</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">cil</span>
+168:             <span class="ruby-identifier">raise</span>
+169:           <span class="ruby-keyword kw">end</span>
+170: 
+171:           <span class="ruby-ivar">@roads</span>[<span class="ruby-identifier">start</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>][<span class="ruby-identifier">cil</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>] = <span class="ruby-value">:directConnection</span>
+172: 
+173:           <span class="ruby-keyword kw">break</span>
+174:         <span class="ruby-keyword kw">rescue</span>
+175:           <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Neplatny vstup, opakujte prosim zadani&quot;</span>
+176:         <span class="ruby-keyword kw">end</span>
+177:       <span class="ruby-keyword kw">end</span>
+178: 
+179: 
+180:     }
+181: 
+182:     <span class="ruby-identifier">evaluateConnections</span>
+183:     <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Pocatecni stav silnicni site&quot;</span>
+184:     <span class="ruby-identifier">displayConnections</span>
+185: 
+186:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="print-esult-method" class="method-detail ">
+				<a name="method-i-printResult"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">printResult</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Vypsání výsledků po ukončení prohledávání
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="print-esult-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Kingdom.rb, line 309</span>
+309:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">printResult</span>
+310:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">solution?</span>
+311:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">optCriterium</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+312:         <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Silnicni sit je vyhovujici.&quot;</span>
+313:       <span class="ruby-keyword kw">else</span>
+314:         <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;Je potreba dostavet silnice&quot;</span>
+315:         <span class="ruby-identifier">i</span> = <span class="ruby-value">1</span>
+316:         <span class="ruby-ivar">@roads</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">tmp</span><span class="ruby-operator">|</span>
+317:           <span class="ruby-identifier">j</span> = <span class="ruby-value">1</span>
+318:           <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">spojeni</span><span class="ruby-operator">|</span>
+319:             <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">spojeni</span> <span class="ruby-operator">==</span> <span class="ruby-value">:newConnection</span>
+320:               <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot; &lt;&quot;</span>
+321:               <span class="ruby-identifier">print</span> <span class="ruby-identifier">i</span>
+322:               <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;,&quot;</span>
+323:               <span class="ruby-identifier">print</span> <span class="ruby-identifier">j</span>
+324:               <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;&gt;&quot;</span>
+325:             <span class="ruby-keyword kw">end</span>
+326:             <span class="ruby-identifier">j</span> = <span class="ruby-identifier">j</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+327:           }
+328:           <span class="ruby-identifier">i</span> = <span class="ruby-identifier">i</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>
+329:         }
+330:       <span class="ruby-keyword kw">end</span>
+331:     <span class="ruby-keyword kw">else</span>
+332:       <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Stav neni resenim.&quot;</span>
+333:     <span class="ruby-keyword kw">end</span>
+334:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="solution--method" class="method-detail ">
+				<a name="method-i-solution%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">solution?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Lze se ze všech měst dostat kamkoliv?
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="solution--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/Kingdom.rb, line 304</span>
+304:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">solution?</span>
+305:     <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@cost</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@cityCount</span>*<span class="ruby-ivar">@cityCount</span>
+306:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

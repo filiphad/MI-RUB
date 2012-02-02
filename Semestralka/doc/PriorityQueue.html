@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: PriorityQueue</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/PriorityQueue_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/PriorityQueue.rb">lib/PriorityQueue.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-displayContent">#displayContent</a></li>
+					
+					<li><a href="#method-i-empty%3F">#empty?</a></li>
+					
+					<li><a href="#method-i-pop">#pop</a></li>
+					
+					<li><a href="#method-i-push">#push</a></li>
+					
+					<li><a href="#method-i-pushArray">#pushArray</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./bin/vstup_txt.html">vstup.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./BranchAndBound.html">BranchAndBound</a></li>
+				
+					<li><a href="./Kingdom.html">Kingdom</a></li>
+				
+					<li><a href="./PriorityQueue.html">PriorityQueue</a></li>
+				
+					<li><a href="./TestovaciObjekt.html">TestovaciObjekt</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">PriorityQueue</h1>
+
+		<div id="description">
+			<p>
+Třída pro reprezentaci prioritní fronty
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+   <span class="ruby-comment cmt"># File lib/PriorityQueue.rb, line 4</span>
+4:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>
+5:     <span class="ruby-ivar">@data</span> = []
+6:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="display-ontent-method" class="method-detail ">
+				<a name="method-i-displayContent"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">displayContent</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Vypiš obsah prioritní fronty
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="display-ontent-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/PriorityQueue.rb, line 43</span>
+43:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">displayContent</span>
+44:     <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">tmp</span><span class="ruby-operator">|</span>
+45:       <span class="ruby-identifier">print</span> <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">cost</span>
+46:       <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot; &quot;</span>
+47:     }
+48:     <span class="ruby-identifier">puts</span>
+49:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="empty--method" class="method-detail ">
+				<a name="method-i-empty%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">empty?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Je prioritní fronta prázdná?
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="empty--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/PriorityQueue.rb, line 38</span>
+38:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">empty?</span>
+39:     <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">empty?</span>
+40:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="pop-method" class="method-detail ">
+				<a name="method-i-pop"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">pop</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Vybrat objekt s nejvyšší cenou z prioritní fronty
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="pop-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/PriorityQueue.rb, line 29</span>
+29:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">pop</span>
+30:     <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@data</span>.<span class="ruby-identifier">empty?</span>
+31:       <span class="ruby-identifier">tmp</span> = <span class="ruby-ivar">@data</span>[<span class="ruby-value">0</span>]
+32:       <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">delete_at</span>(<span class="ruby-value">0</span>)
+33:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">tmp</span>
+34:     <span class="ruby-keyword kw">end</span>
+35:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="push-method" class="method-detail ">
+				<a name="method-i-push"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">push</span><span
+						class="method-args">(stav)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Vložit objekt do prioritní fronty
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="push-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/PriorityQueue.rb, line 9</span>
+ 9:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">push</span>(<span class="ruby-identifier">stav</span>)
+10:     <span class="ruby-ivar">@data</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">stav</span>
+11:     <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">sort!</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span><span class="ruby-operator">|</span>
+12:       <span class="ruby-identifier">x</span>.<span class="ruby-identifier">cost</span><span class="ruby-operator">&lt;=&gt;</span><span class="ruby-identifier">y</span>.<span class="ruby-identifier">cost</span>
+13:     }
+14:     <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">reverse!</span>
+15:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="push-rray-method" class="method-detail ">
+				<a name="method-i-pushArray"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">pushArray</span><span
+						class="method-args">(stavy)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Vložit pole objektů do prioritní fronty
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="push-rray-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/PriorityQueue.rb, line 18</span>
+18:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">pushArray</span>(<span class="ruby-identifier">stavy</span>)
+19:     <span class="ruby-identifier">stavy</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">stav</span><span class="ruby-operator">|</span>
+20:       <span class="ruby-ivar">@data</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">stav</span>
+21:     }
+22:     <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">sort!</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span><span class="ruby-operator">|</span>
+23:       <span class="ruby-identifier">x</span>.<span class="ruby-identifier">cost</span><span class="ruby-operator">&lt;=&gt;</span><span class="ruby-identifier">y</span>.<span class="ruby-identifier">cost</span>
+24:     }
+25:     <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">reverse!</span>
+26:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

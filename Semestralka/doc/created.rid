@@ -1,0 +1,9 @@
+Mon, 30 Jan 2012 22:46:56 +0100
+./bin/main.rb	Mon, 30 Jan 2012 21:23:32 +0100
+./bin/vstup.txt	Mon, 30 Jan 2012 20:26:49 +0100
+./lib/BranchAndBound.rb	Mon, 30 Jan 2012 22:46:45 +0100
+./lib/Kingdom.rb	Mon, 30 Jan 2012 22:41:39 +0100
+./lib/PriorityQueue.rb	Mon, 30 Jan 2012 22:44:00 +0100
+./test/BranchAndBound_spec.rb	Mon, 30 Jan 2012 22:25:09 +0100
+./test/Kingdom_spec.rb	Mon, 30 Jan 2012 22:08:51 +0100
+./test/PriorityQueue_spec.rb	Mon, 30 Jan 2012 18:50:04 +0100
